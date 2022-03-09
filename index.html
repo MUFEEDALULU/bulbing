@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulbing</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="bg-black">
+  <video src="images/lamp.mp4" type="video/mp4" autoplay muted loop id="myVideo"></video>
+  <div class="row ">
+    <div calss="col-md-12">
+    
+      
+     
+        <div class="content" id="left">
+          
+            <img class="logo" src="images/Asset 1bulbing.svg" id="logo">
+          
+         
+            <p class="text">Coming Soon</p>
+          <br/><br>   
+                 
+            <button class="btn btn-secondary btn-sm" id="myBtn" onclick="myFunction()">Pause</button>
+            <br> <br>
+             <a href="https://instagram.com/bulbingconcepts?utm_medium=copy_link" class="instagram"> 
+                <i class="fa fa-instagram"></i> 
+                </a> 
+      </div>   
+    </div>
+  </body>
+</html>
+<script >
+    // Get the video
+    var video = document.getElementById("myVideo");
+    
+    // Get the button
+    var btn = document.getElementById("myBtn");
+    
+    // Pause and play the video, and change the button text
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
